@@ -1,33 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Haezl`,
+    title: `Mundo React`,
     author: {
-      name: "gatsby starter haezl",
+      name: "Mundo React",
       image: "/img/me.png",
-      biography: "A lightweight, mobile first blog starter with infinite scroll \
-        and Material-UI design elements for Gatsby.",
+      biography: "Um newsletter semanal com tudo o que você precisa saber sobre React. \
+        Sem basteira, sem spam e sem mimimi",
     },
-    // for a list of supported networks take a look at https://jaketrent.github.io/react-social-icons/
     networks: [
-      "https://twitter.com/iamhaezl",
-      "https://github.com/haezl/gatsby-starter-haezl",
-      "mailto:mail@haezl.at",
+      "mailto:drdpedroso@gmail.com",
     ],
-    about: '<p>A lightweight, mobile first blog starter with infinite scroll \
-    and Material-UI design elements for \
-    <a href="https://github.com/gatsbyjs/gatsby" target="_blank">Gatsby</a>. </p> \
-    <p>For a quick start with this starter checkout the \
-    <a href="/posts/get-started/get-started/">Get Started</a> guide. For \
-    an overview of plugins used in this starter have a look at \
-    <a href="/posts/gatsby-plugins/gatsby-plugins/">Plugins</a>. \
-    To see a markdown blog entry in action click \
-    <a href="/posts/markdown/markdown-test/">here</a>. \
-    </p> \
-    ',
+    about: `<p>Existem muitas listas de e-mails sobre as novidades do React pelo mundo, a maioria delas em inglês. \
+     Eu morei muito tempo na Europa e, ao voltar pro Brasil, senti que muitos dos desenvolvedores que eu conversava nunca estavam tão entusiasmados quanto eu sobre algo novo no ecossistema do React ou do JavaScript. \
+      Mais tarde fui perceber que, pela maior parte do conteudo ser em inglês, a interpretação do que estava escrito ou até um entendimento básico não aconteciam. Isso quando a pessoa tentava ler.\
+      Isso me fez ter vontade de democratizar esse contéudo de alguma maneira. Foi ai que surgiu o <strong>Mundo React</strong>.
+    </p>`
   },
   plugins: [
     `gatsby-plugin-tslint`,
     `gatsby-plugin-typescript`,
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://eduardopedroso.us5.list-manage.com/subscribe/post?u=3aab6b0d660673d9e587955cb&amp;id=c84e94d9aa', // string; add your MC list endpoint here; see instructions below
+        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

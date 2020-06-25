@@ -5,7 +5,7 @@ import THEME from "../../theme"
 
 export default () => (
   <div style={{ textAlign: "right" }}>
-    <Link to={`/about/`} style={{ textDecoration: "none" }}>
+    <Link to={`/about/`} style={{ textDecoration: "none", border: 'none', backgroundImage: 'none' }}>
       <Button
         variant="outlined"
         style={{
@@ -18,7 +18,7 @@ export default () => (
           width: THEME.index.aboutButton.width,
         }}
       >
-        About
+       Sobre
       </Button>
     </Link>
   </div>

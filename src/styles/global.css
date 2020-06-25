@@ -2,18 +2,18 @@ html {
     scroll-behavior: smooth;
 }
 
-.anchor {
-    background-image: none;
-}
+/*.anchor {*/
+/*    background-image: none;*/
+/*}*/
 
-.gatsby-resp-image-link {
-    background-image: none;
-}
+/*.gatsby-resp-image-link {*/
+/*    background-image: none;*/
+/*}*/
 
-.language-javascript>span {
-    font-size: 18px;
-}
+/*.language-javascript>span {*/
+/*    font-size: 18px;*/
+/*}*/
 
-:not(pre)>code[class*="language-"] {
-    font-size: 18px;
-}
+/*:not(pre)>code[class*="language-"] {*/
+/*    font-size: 18px;*/
+/*}*/

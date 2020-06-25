@@ -21,7 +21,7 @@ export default ({ author }: IProps) => {
       alignItems="center"
       direction={"column"}
     >
-      <Link to="/">
+      <Link style={{backgroundImage: 'none'}} to="/">
         <Avatar
           style={{
             alignItems: "baseline",
